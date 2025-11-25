@@ -25,9 +25,9 @@ const TransformerTable: React.FC<Props> = ({ data }) => {
   const getStatusBadge = (status: TransformerStatus) => {
     switch (status) {
       case TransformerStatus.CRITICAL:
-        return <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800"><AlertOctagon size={12}/> เร่งด่วน (&gt;100%)</span>;
+        return <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800"><AlertOctagon size={12}/> เร่งด่วน ({'>'}100%)</span>;
       case TransformerStatus.WARNING:
-        return <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800"><AlertTriangle size={12}/> เฝ้าระวัง (&gt;80%)</span>;
+        return <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800"><AlertTriangle size={12}/> เฝ้าระวัง ({'>'}80%)</span>;
       default:
         return <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800"><CheckCircle size={12}/> ปกติ</span>;
     }
