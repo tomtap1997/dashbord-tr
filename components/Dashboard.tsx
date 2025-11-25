@@ -56,7 +56,7 @@ const Dashboard: React.FC<Props> = ({ data }) => {
         
         <div className="bg-white p-5 rounded-xl shadow-sm border border-red-200 bg-red-50/50 flex items-center justify-between">
           <div>
-            <p className="text-xs text-red-600 mb-1 font-medium">แก้ไขเร่งด่วน (>100%)</p>
+            <p className="text-xs text-red-600 mb-1 font-medium">แก้ไขเร่งด่วน (&gt;100%)</p>
             <h3 className="text-2xl font-bold text-red-700">{critical}</h3>
           </div>
           <div className="p-2 bg-red-100 rounded-full text-red-600">
@@ -66,7 +66,7 @@ const Dashboard: React.FC<Props> = ({ data }) => {
 
         <div className="bg-white p-5 rounded-xl shadow-sm border border-amber-200 bg-amber-50/50 flex items-center justify-between">
           <div>
-            <p className="text-xs text-amber-600 mb-1 font-medium">เฝ้าระวัง (>80%)</p>
+            <p className="text-xs text-amber-600 mb-1 font-medium">เฝ้าระวัง (&gt;80%)</p>
             <h3 className="text-2xl font-bold text-amber-700">{warning}</h3>
           </div>
           <div className="p-2 bg-amber-100 rounded-full text-amber-600">
@@ -78,7 +78,7 @@ const Dashboard: React.FC<Props> = ({ data }) => {
         <div className="bg-white p-5 rounded-xl shadow-sm border border-indigo-200 bg-indigo-50/50 flex items-center justify-between">
           <div>
             <p className="text-xs text-indigo-600 mb-1 font-medium">แก้ไข Unbalance</p>
-            <p className="text-[10px] text-indigo-400 mb-0.5">(Unb > 50% & Load > 50%)</p>
+            <p className="text-[10px] text-indigo-400 mb-0.5">(Unb &gt; 50% & Load &gt; 50%)</p>
             <h3 className="text-2xl font-bold text-indigo-700">{unbalanceIssues}</h3>
           </div>
           <div className="p-2 bg-indigo-100 rounded-full text-indigo-600">
