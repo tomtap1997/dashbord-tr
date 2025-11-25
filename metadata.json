@@ -1,0 +1,5 @@
+{
+  "name": "PEA Transformer Analyzer (OPSA)",
+  "description": "แอปพลิเคชันสำหรับวิเคราะห์ข้อมูลหม้อแปลงไฟฟ้า (Load, Voltage Drop, Losses) จากไฟล์ Excel (OPSAonGIS) เพื่อระบุสถานะเร่งด่วนและเฝ้าระวัง พร้อมระบบ AI ช่วยสรุปผล",
+  "requestFramePermissions": []
+}
