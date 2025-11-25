@@ -1,6 +1,6 @@
 import React from 'react';
 import { TransformerData, TransformerStatus } from '../types';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell, ScatterChart, Scatter, ZAxis } from 'recharts';
+import { XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell, ScatterChart, Scatter, ZAxis } from 'recharts';
 import { Zap, AlertTriangle, Activity, TrendingDown, GitMerge } from 'lucide-react';
 import TransformerTable from './TransformerTable';
 import AnalysisReport from './AnalysisReport';
@@ -8,8 +8,6 @@ import AnalysisReport from './AnalysisReport';
 interface Props {
   data: TransformerData[];
 }
-
-const COLORS = ['#0088FE', '#FFBB28', '#FF8042'];
 
 const Dashboard: React.FC<Props> = ({ data }) => {
   // Calculate Summaries
